@@ -81,22 +81,26 @@ class FriendRequestScreen extends StatelessWidget {
                     height: 10,
                   ),
                   Row(
-                    children: const [
-                      Button(
+                    children: [
+                      BaseButton(
+                        onTap: (){},
                         sizeBorder: 7,
                         width: 110,
                         height: 34,
                         content: 'Suggestions',
+                        colorButton: AppColor.color384CFF,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 15,
                       ),
-                      Button(
+                      BaseButton(
+                        onTap: () {},
                         sizeBorder: 7,
                         width: 110,
                         height: 34,
                         content: 'Your Friends',
-                      )
+                        colorButton: AppColor.color384CFF,
+                      ),
                     ],
                   ),
                   const BaseDistance(),

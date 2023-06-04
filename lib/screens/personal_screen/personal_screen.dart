@@ -85,17 +85,20 @@ class PersonalScreen extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                const Button(
+                                BaseButton(
+                                  onTap: () {},
                                   sizeBorder: 7,
                                   width: 150,
                                   height: 35,
                                   content: 'Add to story',
-                                  contentStyle: TextStyle(
+                                  colorButton: AppColor.color384CFF,
+                                  contentStyle: const TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w700,
                                   ),
                                 ),
-                                Button(
+                                BaseButton(
+                                  onTap: () {},
                                   sizeBorder: 7,
                                   width: 150,
                                   height: 35,
@@ -197,12 +200,14 @@ class PersonalScreen extends StatelessWidget {
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Button(
+                        children: [
+                          BaseButton(
+                            onTap: () {},
                             sizeBorder: 7,
                             width: 150,
                             height: 25,
                             content: 'Edit public details',
+                            colorButton: AppColor.color384CFF,
                           )
                         ],
                       ),
@@ -217,6 +222,7 @@ class PersonalScreen extends StatelessWidget {
                         ),
                         avtPost: 'assets/images/Avt.png',
                         subTitle: '',
+                        textStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
                         linkImgContentPost:
                             'assets/images/Profile_content_post.png',
                         liked: '1k',
@@ -226,7 +232,7 @@ class PersonalScreen extends StatelessWidget {
                             'assets/images/Regime_share_public.svg',
                         name: 'Sanjay Shendy',
                         titlePost: '',
-                        timeAndAddressPost: '10h',
+                        timeAndAddressPost: '10h ',
                       )
                     ],
                   )

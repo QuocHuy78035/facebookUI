@@ -18,11 +18,11 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool isPassVisible = true;
+  String email = '';
+  String pass = '';
 
   @override
   Widget build(BuildContext context) {
-    String email = '';
-    String pass = '';
     void onTapIcon() {
       setState(
         () {
@@ -118,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         const SizedBox(
                           height: 50,
                         ),
-                        Button(
+                        BaseButton(
                           onTap: () {
                             state.email = email;
                             state.password = pass;
@@ -135,7 +135,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        Button(
+                        BaseButton(
                           colorButton: AppColor.colorWhite,
                           sizeBorder: 15,
                           width: MediaQuery.of(context).size.width,

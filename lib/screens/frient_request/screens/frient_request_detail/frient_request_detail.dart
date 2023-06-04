@@ -63,16 +63,19 @@ class FriendRequest extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      const Button(
+                      BaseButton(
+                        onTap: (){},
                         sizeBorder: 7,
                         width: 120,
                         height: 35,
                         content: 'Confirm',
+                        colorButton: AppColor.color384CFF,
                       ),
                       const SizedBox(
                         width: 15,
                       ),
-                      Button(
+                      BaseButton(
+                        onTap: (){},
                         sizeBorder: 7,
                         width: 120,
                         height: 35,
